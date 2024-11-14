@@ -105,7 +105,8 @@ backend_node_dependencies() {
 
   sudo su - deploy <<EOF
   cd /home/deploy/${instancia_add}/backend
-  npm install
+  npm install --legacy-peer-deps
+
 EOF
 
   sleep 2
